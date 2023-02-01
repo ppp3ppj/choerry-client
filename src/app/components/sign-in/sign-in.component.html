@@ -1,0 +1,22 @@
+<p>sign-in works!</p>
+ <h2>Login Page</h2><br>
+    
+    <div>
+ <form [formGroup]="signInForm">
+        <label><b>User Name </b>
+        </label>
+        <input type="text" placeholder="Username" formControlName="username">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" placeholder="Password" formControlName="password">
+        <br><br>
+        <button type="button" (click)="onSubmit()">submit</button>
+        <br><br>
+        <input type="checkbox" id="check">
+</form>
+        <span>Remember me</span>
+        <br><br>
+        Forgot <a href="#">Password</a>
+</div>
